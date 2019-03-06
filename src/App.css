@@ -1,0 +1,99 @@
+.main {
+  font-family: "Roboto", sans-serif;
+}
+
+.main header {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #194dac;
+}
+.main header .logo {
+  width: 100px;
+  animation: logo-spin 2s linear infinite;
+}
+.main header .search {
+  background: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+.main header .search > * {
+  padding: 10px;
+  border: none;
+}
+.main header .search input {
+  outline: none;
+  font-size: 15px;
+}
+.main header .search button {
+  border-radius: 5px;
+  color: white;
+  background: rgb(243, 38, 38);
+}
+.main header .profile {
+  position: relative;
+}
+.main header .profile:hover .profile-options {
+  display: block;
+}
+.main header .profile .profile-options {
+  display: none;
+  position: absolute;
+  width: 150px;
+  left: calc(100% - 140px);
+  top: calc(100% - 15px);
+  background: rgb(201, 196, 196);
+  list-style: none;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 5px;
+}
+.main header .profile .profile-options .profile-options-item {
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+}
+.main header .profile .profile-options .profile-options-item:hover {
+  color: rgb(145, 180, 221);
+}
+.main header .profile .profile-pic {
+  width: 50px;
+  border: none;
+  border-radius: 50%;
+}
+
+.main .container {
+  padding: 40px;
+  text-align: center;
+}
+.main .container .title {
+  font-size: 30px;
+}
+.main .container .todo-list {
+  display: flex;
+  list-style: none;
+}
+.main .container .todo-item {
+  padding: 10px;
+  margin: 10px;
+  text-align: left;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.main .container .todo-item:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.main .container .todo-item .todo-item-title {
+  font-weight: bold;
+  color: #2467cf;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
